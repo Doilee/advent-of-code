@@ -8,7 +8,6 @@ foreach ($array as $age) {
     $fish[$age]++;
 }
 
-
 for ($days = 0; $days < 256; $days++) {
     $new_fish = array_shift($fish);
     $fish[6] += $new_fish;
