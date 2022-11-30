@@ -8,7 +8,7 @@ import (
 
 const maxXDistance = 31
 
-func parseInput() {
+func getSolution() {
 	bytes, _ := os.ReadFile("2020/day3.txt")
 	puzzleInput := string(bytes)
 	lines := strings.Split(puzzleInput, "\n")
@@ -49,5 +49,5 @@ func getTreesEncountered(lines []string, right int, down int) int {
 }
 
 func main() {
-	parseInput()
+	getSolution()
 }
