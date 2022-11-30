@@ -123,10 +123,6 @@ func determinePartTwoValidPassport(passport map[string]string) bool {
 		}
 	}
 
-	if check == 7 {
-		fmt.Println(passport)
-	}
-
 	return check == 7
 }
 
