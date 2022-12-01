@@ -13,7 +13,6 @@ func main() {
 	puzzleInput := string(bytes)
 	lines := strings.Split(puzzleInput, "\n\n")
 
-	answerPartOne := 0
 	var caloriesPerElf []int
 
 	for _, line := range lines {
@@ -25,21 +24,19 @@ func main() {
 			calorieSum += toInt
 		}
 
-		if calorieSum > answerPartOne {
-			answerPartOne = calorieSum
-		}
-
 		caloriesPerElf = append(caloriesPerElf, calorieSum)
 	}
 	sort.Ints(caloriesPerElf)
 	highestThreeCalorieElves := caloriesPerElf[len(caloriesPerElf)-3:]
-	answerPartTwo := sum(highestThreeCalorieElves)
+
+	answerPartOne := caloriesPerElf[len(caloriesPerElf)-1]
+	answerPartTwo := array_sum(highestThreeCalorieElves)
 
 	fmt.Println(answerPartOne)
 	fmt.Println(answerPartTwo)
 }
 
-func sum(array []int) int {
+func array_sum(array []int) int {
 	result := 0
 	for _, v := range array {
 		result += v
