@@ -2,25 +2,19 @@
 
 $string = file_get_contents('day6.txt');
 
-const PART_ONE = 4;
-const PART_TWO = 14;
+const LAST_4 = 4;
+const LAST_14 = 14;
 
 $lastFour = [];
 
 foreach (str_split($string) as $index => $character) {
     $lastFour[] = $character;
 
-    if (count($lastFour) > PART_TWO) {
-        array_shift($lastFour);
-    }
+    if (count($lastFour) > LAST_14) array_shift($lastFour);
 
-    if (arrayHasDupes($lastFour)) {
-        var_dump(array_unique($lastFour));
-        var_dump($lastFour);
-        continue;
-    }
+    if (arrayHasDupes($lastFour)) continue;
 
-    if (count($lastFour) == PART_TWO) {
+    if (count($lastFour) == LAST_14) {
         var_dump($index + 1);
         die();
     }
