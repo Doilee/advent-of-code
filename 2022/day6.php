@@ -2,7 +2,6 @@
 
 $string = file_get_contents('day6.txt');
 
-
 const PART_ONE = 4;
 const PART_TWO = 14;
 
@@ -22,7 +21,7 @@ foreach (str_split($string) as $index => $character) {
     }
 
     if (count($lastFour) == PART_TWO) {
-        var_dump('Answer part 1:' . $index + 1);
+        var_dump($index + 1);
         die();
     }
 }
