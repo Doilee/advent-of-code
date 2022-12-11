@@ -9,7 +9,7 @@ const PART_ONE = 4
 const PART_TWO = 14
 
 func main() {
-	bytes, _ := os.ReadFile("2022/day6.txt")
+	bytes, _ := os.ReadFile("2022/day6/day6.txt")
 	signal := string(bytes)
 
 	var lastFour []rune

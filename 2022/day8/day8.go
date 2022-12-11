@@ -15,7 +15,7 @@ type Tree struct {
 }
 
 func main() {
-	bytes, _ := os.ReadFile("2022/day8.txt")
+	bytes, _ := os.ReadFile("2022/day8/day8.txt")
 	puzzleInput := string(bytes)
 	data := strings.Split(puzzleInput, "\n")
 
