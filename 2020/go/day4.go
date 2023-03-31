@@ -20,7 +20,7 @@ type Passport struct {
 }
 
 func main() {
-	bytes, _ := os.ReadFile("2020/day4.txt")
+	bytes, _ := os.ReadFile("2020/input/day4.txt")
 	puzzleInput := string(bytes)
 	lines := strings.Split(puzzleInput, "\n\n")
 	passports := make([]map[string]string, 0)

@@ -1,6 +1,6 @@
 <?php
 
-$string = file_get_contents('day6.txt');
+$string = file_get_contents('../input/06.txt');
 
 const LAST_4 = 4;
 const LAST_14 = 14;

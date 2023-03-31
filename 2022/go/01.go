@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	bytes, _ := os.ReadFile("2022/day1/day1.txt")
+	bytes, _ := os.ReadFile("2022/input/01.txt")
 	puzzleInput := string(bytes)
 	lines := strings.Split(puzzleInput, "\n\n")
 

@@ -25,7 +25,7 @@ const (
 )
 
 func main() {
-	bytes, _ := os.ReadFile("2022/day2/day2.txt")
+	bytes, _ := os.ReadFile("2022/input/02.txt")
 	puzzleInput := string(bytes)
 	lines := strings.Split(puzzleInput, "\n")
 

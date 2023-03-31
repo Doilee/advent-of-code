@@ -13,7 +13,7 @@ type valueStruct struct {
 }
 
 func day2() {
-	bytes, _ := os.ReadFile("2021/day2.txt")
+	bytes, _ := os.ReadFile("2021/input/02.txt")
 	puzzleInput := string(bytes)
 	lines := strings.Split(puzzleInput, "\n")
 	values := make([]valueStruct, len(lines))

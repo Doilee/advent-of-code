@@ -9,7 +9,7 @@ import (
 const maxXDistance = 31
 
 func getSolution() {
-	bytes, _ := os.ReadFile("2020/day3.txt")
+	bytes, _ := os.ReadFile("2020/input/day3.txt")
 	puzzleInput := string(bytes)
 	lines := strings.Split(puzzleInput, "\n")
 

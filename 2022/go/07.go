@@ -21,7 +21,7 @@ type File struct {
 }
 
 func main() {
-	bytes, _ := os.ReadFile("2022/day7/day7.txt")
+bytes, _ := os.ReadFile("2022/input/07.txt")
 	puzzleInput := string(bytes)
 	data := strings.Split(puzzleInput, "\n")
 
