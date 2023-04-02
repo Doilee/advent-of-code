@@ -5,5 +5,6 @@ pub fn execute() {
         .max()
         .unwrap();
 
-    println!("{:?}", data);
+
+     println!("{:?}", data);
 }
