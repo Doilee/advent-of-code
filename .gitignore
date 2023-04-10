@@ -2,4 +2,5 @@
 
 # Added by cargo
 /target
-/2022/rust/target
+/*/*/*/target
+/*/*/target
